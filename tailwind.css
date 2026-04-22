@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+details { @apply bg-blue-50/20 border border-black/10 rounded-lg shadow shadow-blue-100; }
+details > summary { @apply px-5 py-3 cursor-pointer marker:content-[''] flex items-center justify-between; }
+details > summary::-webkit-details-marker { display: none; } /* iPhone */
+details[open] > summary > i  { @apply rotate-90 transition-all duration-400 ease-in-out; }
+details > div { @apply px-5 py-3 border-t border-black/10 ; }
+details > div > ul { @apply ml-4 list-outside list-[square] space-y-1; }
+
